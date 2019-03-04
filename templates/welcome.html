@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body%}
+<section class="hero is-info is-medium ">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Welcome</h1>
+            <p class="subtitle">Get Yourself a Book</p>
+
+            <button>
+                <p class="control">
+                    <a class="button is-primary " href="{{ url_for('login') }}">
+                        <span>Login</span>
+                    </a>
+                </p>
+            </button>
+
+            <button>
+                <p class="control">
+                    <a class="button is-primary" href="{{ url_for('register') }}">
+                        <span>Register</span>
+                    </a>
+                </p>
+            </button>
+        </div>
+    </div>
+</section>
+{% endblock %}
